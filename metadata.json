@@ -1,0 +1,8 @@
+{
+  "name": "Zenith Tokyo Architectural Studio",
+  "description": "A luxury minimalist web platform showcasing high-end architecture and interior design with sophisticated Tokyo-inspired aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
