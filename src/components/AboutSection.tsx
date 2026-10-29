@@ -1,6 +1,7 @@
 import React from 'react';
 import { Compass, ArrowRight, Phone, Mail, PenTool } from 'lucide-react';
 import { ArchitecturalDrawingStudio } from './ArchitecturalDrawingStudio';
+import { BusinessCardShowcase } from './BusinessCardShowcase';
 import { useSiteData } from '../context/SiteDataContext';
 import { Language, ThemeConfig } from '../types';
 
@@ -316,6 +317,24 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               </button>
             </div>
           </div>
+        </div>
+
+        {/* OFFICIAL BUSINESS CARD SHOWCASE (Interactive 3D Card) */}
+        <div className="pt-16 pb-12 border-t border-stone-800">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-xs uppercase tracking-[0.3em] text-[#C5A059] font-montserrat block mb-2">
+              Official Executive Identity
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-bold font-shippori text-white">
+              {isJa ? '公式名刺インタラクティブ・プレビュー' : 'Executive Business Card Portfolio'}
+            </h3>
+            <p className="text-xs sm:text-sm text-stone-400 font-montserrat mt-2">
+              {isJa
+                ? '株式会社ゼニス代表取締役 李 雲鶴 / 高橋 承柱の公式名刺。表裏切替・ワンクリック連絡先コピー・vCard保存に対応。'
+                : 'Interactive representation of Zenith Tokyo executive business cards with dual-sided inspection and instant contact copying.'}
+            </p>
+          </div>
+          <BusinessCardShowcase lang={lang} themeConfig={themeConfig} />
         </div>
 
         {/* ARCHITECTURAL DRAWING STUDIO SECTION (Architectural Blueprints & Sketches) */}

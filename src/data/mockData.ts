@@ -85,7 +85,7 @@ export const PROJECTS: Project[] = [
       ja: ['ベルデ・アルピ深緑大理石', '樹齢300年 吉野本枯杉', '墨色土壁仕上げ', '低反射ダークブロンズサッシ'],
       en: ['Verde Alpi Green Marble', '300-year aged Yoshino Cedar', 'Sumi Ink Clay Render', 'Low-E Bronze Anodized Glazing']
     },
-    architects: { ja: '高橋 健二郎 / ZENITH TOKYO 主宰', en: 'Kenjiro Takahashi, Principal Architect' },
+    architects: { ja: '李 雲鶴・高橋 承柱 / ZENITH TOKYO 主宰', en: 'Lee Woonhak & Takahashi Sunju, Principals' },
     awards: { ja: '2024年 アジア建築デザイン金賞 受賞', en: '2024 Asia Architecture Gold Trophy' },
     featured: true
   },
@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
       ja: ['イタリア産 ヴェルデ・アルピ大理石', '真鍮削り出し特注什器', 'ブラックスウェード壁装'],
       en: ['Italian Verde Alpi Marble', 'Milled Solid Brass Custom Joinery', 'Black Suede Wall Coverings']
     },
-    architects: { ja: '高橋 健二郎 ＋ 山田 律子', en: 'Kenjiro Takahashi & Ritsuko Yamada' },
+    architects: { ja: '李 雲鶴・高橋 承柱', en: 'Lee Woonhak & Takahashi Sunju' },
     awards: { ja: '2023年 国際インテリアリテール大賞', en: '2023 International Retail Design Award' },
     featured: true
   },
@@ -153,7 +153,7 @@ export const PROJECTS: Project[] = [
       ja: ['国産クリ無垢材', '信州浅間石積み', '耐候性コールテン鋼', 'トリプル断熱ガラス'],
       en: ['Native Solid Chestnut', 'Asama Volcanic Stone Walls', 'Weathering Corten Steel', 'Triple-Glazed Panoramic Glass']
     },
-    architects: { ja: '高橋 健二郎 / 佐藤 雅彦', en: 'Kenjiro Takahashi & Masahiko Sato' },
+    architects: { ja: '李 雲鶴・高橋 承柱', en: 'Lee Woonhak & Takahashi Sunju' },
     featured: true
   },
   {
@@ -186,7 +186,7 @@ export const PROJECTS: Project[] = [
       ja: ['植物染めブラックオーク', '微細骨材モルタル床', '特注ブロンズガラス間仕切り'],
       en: ['Vegetal Black-Dyed Oak', 'Micro-cement Flooring', 'Custom Smoked Bronze Partitions']
     },
-    architects: { ja: '高橋 健二郎', en: 'Kenjiro Takahashi' },
+    architects: { ja: '李 雲鶴・高橋 承柱', en: 'Lee Woonhak & Takahashi Sunju' },
     featured: false
   },
   {
@@ -218,7 +218,7 @@ export const PROJECTS: Project[] = [
       ja: ['輪島塗 特注漆カウンター', '越前手漉き楮和紙', '京都産 聚楽土壁'],
       en: ['Wajima Urushi Master Lacquer', 'Echizen Mulberry Washi', 'Kyoto Juraku Earth Render']
     },
-    architects: { ja: '高橋 健二郎 ＋ 木下 雅之', en: 'Kenjiro Takahashi & Masayuki Kinoshita' },
+    architects: { ja: '李 雲鶴・高橋 承柱', en: 'Lee Woonhak & Takahashi Sunju' },
     featured: false
   },
   {
@@ -250,7 +250,7 @@ export const PROJECTS: Project[] = [
       ja: ['高耐久ブラックコンクリート', '玄武岩スラブ', 'チーク無垢材テラス'],
       en: ['Ultra-Durable Dark Concrete', 'Basalt Stone Slabs', 'Solid Teak Decking']
     },
-    architects: { ja: '高橋 健二郎', en: 'Kenjiro Takahashi' },
+    architects: { ja: '李 雲鶴・高橋 承柱', en: 'Lee Woonhak & Takahashi Sunju' },
     featured: false
   }
 ];
@@ -359,7 +359,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     categoryLabel: { ja: '建築論考', en: 'Architecture Essay' },
     date: '2024.11.18',
     readTime: '6 min read',
-    author: { ja: '高橋 健二郎（主宰建築家）', en: 'Kenjiro Takahashi, Principal' },
+    author: { ja: '李 雲鶴・高橋 承柱（ZENITH TOKYO 主宰）', en: 'Lee Woonhak & Takahashi Sunju, Principals' },
     coverImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
     excerpt: {
       ja: '白く明るい均質な空間から脱却し、自然の陰影と黒御影石の深みを肯定する。なぜ今、東京のラグジュアリー空間に「闇の美学」が必要なのかを考察します。',

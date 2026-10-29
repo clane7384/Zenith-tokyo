@@ -46,23 +46,29 @@ interface SiteDataContextType {
 const SiteDataContext = createContext<SiteDataContextType | null>(null);
 
 const STORAGE_KEYS = {
-  COMPANY: 'zenith_tokyo_company_info',
-  PROJECTS: 'zenith_tokyo_projects',
-  JOURNAL: 'zenith_tokyo_journal',
-  FORMSPREE: 'zenith_tokyo_formspree_endpoint',
-  ADMIN_PW: 'zenith_tokyo_admin_password',
-  INQUIRY_LOGS: 'zenith_tokyo_inquiry_logs'
+  COMPANY: 'zenith_tokyo_company_info_v3',
+  PROJECTS: 'zenith_tokyo_projects_v3',
+  JOURNAL: 'zenith_tokyo_journal_v3',
+  FORMSPREE: 'zenith_tokyo_formspree_endpoint_v3',
+  ADMIN_PW: 'zenith_tokyo_admin_password_v3',
+  INQUIRY_LOGS: 'zenith_tokyo_inquiry_logs_v3'
 };
 
 const DEFAULT_ADMIN_PW = '7458';
 const DEFAULT_FORMSPREE_URL = 'https://formspree.io/f/mdeoeevy';
 
 export const SiteDataProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Company Info State
+  // Company Info State - validated against current official data
   const [companyInfo, setCompanyInfo] = useState<CompanyInfo>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEYS.COMPANY);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        // Only accept saved if it contains the official Shinjuku address
+        if (parsed?.addressJa?.includes('歌舞伎町')) {
+          return parsed;
+        }
+      }
     } catch {
       // ignore
     }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Copy, Check, RefreshCw, Download } from 'lucide-react';
 import { ZenithLogo } from './ZenithLogo';
+import { useSiteData } from '../context/SiteDataContext';
 import { COMPANY_INFO } from '../data/mockData';
 import { Language, ThemeConfig } from '../types';
 
@@ -12,14 +13,15 @@ interface BusinessCardShowcaseProps {
 export const BusinessCardShowcase: React.FC<BusinessCardShowcaseProps> = ({
   lang
 }) => {
+  const { companyInfo } = useSiteData();
   const isJa = lang === 'ja';
   const [activeDirectorIdx, setActiveDirectorIdx] = useState<number>(0);
   const [cardTheme, setCardTheme] = useState<'ivory' | 'dark'>('ivory');
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
-  const directors = COMPANY_INFO.directors;
-  const currentDirector = directors[activeDirectorIdx];
+  const directors = companyInfo?.directors?.length ? companyInfo.directors : COMPANY_INFO.directors;
+  const currentDirector = directors[activeDirectorIdx] || directors[0];
 
   const handleCopy = (text: string, fieldId: string) => {
     navigator.clipboard.writeText(text);
